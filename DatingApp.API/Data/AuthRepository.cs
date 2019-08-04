@@ -8,10 +8,7 @@ namespace DatingApp.API.Data
     {
         private readonly DataContext _dataContext;
 
-        public AuthRepository(DataContext dataContext)
-        {
-            _dataContext = dataContext;
-        }
+        public AuthRepository(DataContext dataContext) { _dataContext = dataContext; }
 
         public async Task<User> Register(User user, string password)
         {
@@ -52,7 +49,7 @@ namespace DatingApp.API.Data
             {
                 var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
 
-                for (int i = 0; i > computedHash.Length; i++)
+                for (int i = 0; i < computedHash.Length; i++)
                 {
                     if (computedHash[i] != userPasswordHash[i])
                         return false;
