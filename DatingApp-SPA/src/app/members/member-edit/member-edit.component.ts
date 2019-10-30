@@ -18,21 +18,25 @@ export class MemberEditComponent implements OnInit {
 
   unloadNotification() {
     if (this.editForm.dirty) {
-      return false
+      return false;
     }
   }
 
-  constructor(private route: ActivatedRoute, private alertify: AlertifyService, private userService: UserService, private authService: AuthService) {
+  constructor(private route: ActivatedRoute,
+              private alertify: AlertifyService,
+              private userService: UserService,
+              private authService: AuthService) {
   }
 
   ngOnInit() {
+    this.unloadNotification();
     this.route.data.subscribe(data => {
       this.user = data['user'];
     });
   }
 
   updateUser() {
-    this.userService.updateUser(this.authService.decodedToken.nameid,this.user).subscribe(next=>{
+    this.userService.updateUser(this.authService.decodedToken.nameid, this.user).subscribe(next => {
       this.alertify.success('Profile updated successfully');
       this.editForm.reset(this.user);
     }, error => this.alertify.error(error));

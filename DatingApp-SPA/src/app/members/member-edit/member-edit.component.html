@@ -50,7 +50,7 @@
                         [(ngModel)]="user.lookingFor"></textarea>
               <h4>Interests</h4>
               <textarea class="form-control" name="interests" rows="6"
-                        [(ngModel)]="user.interests"></textarea>
+                        [(ngModel)]="user.interest"></textarea>
               <h4>Location Details:</h4>
               <div class="form-inline">
                 <label for="city">City</label>
@@ -62,6 +62,7 @@
           </tab>
           <tab heading="Edit Photos">
             <p>Photo edit will go here</p>
+            <app-photo-editor [photos]="user.photos"></app-photo-editor>
           </tab>
         </tabset>
       </div>
