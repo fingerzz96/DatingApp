@@ -54,6 +54,7 @@
       <e p="DatingApp-SPA/node_modules/karma-jasmine-html-reporter" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/license-webpack-plugin" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/magic-string" t="IncludeRecursive" />
+      <e p="DatingApp-SPA/node_modules/ng2-file-upload" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/ngx-bootstrap" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/ngx-gallery" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/portfinder" t="IncludeRecursive" />
