@@ -66,6 +66,7 @@
       <e p="DatingApp-SPA/node_modules/sourcemap-codec" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/symbol-observable" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/terser" t="IncludeRecursive" />
+      <e p="DatingApp-SPA/node_modules/time-ago-pipe" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/tree-kill" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/ts-node" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/tslib" t="IncludeRecursive" />
@@ -153,6 +154,7 @@
           <e p="AutoMapperProfiles.cs" t="Include" />
           <e p="CloudinarySettings.cs" t="Include" />
           <e p="Extensions.cs" t="Include" />
+          <e p="LogUserActivity.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="20190911131201_AddedUserEntity.Designer.cs" t="Include" />

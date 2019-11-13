@@ -29,6 +29,7 @@ import {PreventUnsavedChanges} from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import {FileUploadModule} from 'ng2-file-upload';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -53,7 +54,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MessagesComponent,
     MemberCardComponent,
     MemberEditComponent,
-    PhotoEditorComponent
+    PhotoEditorComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
