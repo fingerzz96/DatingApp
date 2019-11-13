@@ -5,6 +5,7 @@ import {environment} from '../../../environments/environment';
 import {AuthService} from '../../_services/auth.service';
 import {UserService} from '../../_services/user.service';
 import {AlertifyService} from '../../_services/alertify.service';
+import {Local} from 'protractor/built/driverProviders';
 
 @Component({
   selector: 'app-photo-editor',
@@ -55,6 +56,11 @@ export class PhotoEditorComponent implements OnInit {
             isMain: res.isMain
           };
           this.photos.push(photo);
+          if (photo.isMain) {
+            this.authService.changeMemberPhoto(photo.url);
+            this.authService.currentUser.photoUrl = photo.url;
+            localStorage.setItem('user', JSON.stringify(this.authService.currentUser));
+          }
         }
       }
     };
