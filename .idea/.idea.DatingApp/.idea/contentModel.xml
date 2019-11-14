@@ -155,6 +155,7 @@
           <e p="CloudinarySettings.cs" t="Include" />
           <e p="Extensions.cs" t="Include" />
           <e p="LogUserActivity.cs" t="Include" />
+          <e p="PageList.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="20190911131201_AddedUserEntity.Designer.cs" t="Include" />
