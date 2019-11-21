@@ -166,9 +166,12 @@
           <e p="20190911133709_ExtendedUserClass.cs" t="Include" />
           <e p="20191003175911_AddedPublicId.Designer.cs" t="Include" />
           <e p="20191003175911_AddedPublicId.cs" t="Include" />
+          <e p="20191121204157_AddedLikedEntity.Designer.cs" t="Include" />
+          <e p="20191121204157_AddedLikedEntity.cs" t="Include" />
           <e p="DataContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="Like.cs" t="Include" />
           <e p="Photo.cs" t="Include" />
           <e p="User.cs" t="Include" />
           <e p="Value.cs" t="Include" />
