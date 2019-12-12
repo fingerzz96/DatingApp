@@ -127,6 +127,7 @@
         <e p=".gitignore" t="Include" />
         <e p="Controllers" t="Include">
           <e p="AuthController.cs" t="Include" />
+          <e p="MessagesController.cs" t="Include" />
           <e p="PhotosController.cs" t="Include" />
           <e p="UsersController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
@@ -143,6 +144,7 @@
         <e p="DatingApp.API.csproj" t="IncludeRecursive" />
         <e p="DatingApp.db" t="Include" />
         <e p="Dtos" t="Include">
+          <e p="MessageForCreatingDto.cs" t="Include" />
           <e p="PhotoForCreationDto.cs" t="Include" />
           <e p="PhotoForDetailedDto.cs" t="Include" />
           <e p="PhotoForReturnDto.cs" t="Include" />
