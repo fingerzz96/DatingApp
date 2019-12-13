@@ -145,6 +145,7 @@
         <e p="DatingApp.db" t="Include" />
         <e p="Dtos" t="Include">
           <e p="MessageForCreatingDto.cs" t="Include" />
+          <e p="MessageToReturnDto.cs" t="Include" />
           <e p="PhotoForCreationDto.cs" t="Include" />
           <e p="PhotoForDetailedDto.cs" t="Include" />
           <e p="PhotoForReturnDto.cs" t="Include" />
