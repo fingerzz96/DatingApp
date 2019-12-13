@@ -42,7 +42,7 @@ namespace DatingApp.API.Controllers
 
         [HttpPost]
         public async Task<IActionResult> CreateMessage(int userId,
-            [FromBody] MessageForCreatingDto messageForCreatingDto)
+            MessageForCreatingDto messageForCreatingDto)
         {
             if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
                 return Unauthorized();

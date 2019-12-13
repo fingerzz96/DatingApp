@@ -4,8 +4,8 @@
     <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_DatingApp.1958885053.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_DatingApp.1958885053.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="DatingApp-SPA/node_modules/@angular/animations" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/@angular/cli" t="IncludeRecursive" />
@@ -159,6 +159,7 @@
           <e p="CloudinarySettings.cs" t="Include" />
           <e p="Extensions.cs" t="Include" />
           <e p="LogUserActivity.cs" t="Include" />
+          <e p="MessageParams.cs" t="Include" />
           <e p="PageList.cs" t="Include" />
           <e p="PaginationHeader.cs" t="Include" />
           <e p="UserParams.cs" t="Include" />
@@ -196,6 +197,7 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
               <e p="DatingApp.API.AssemblyInfo.cs" t="Include" />
+              <e p="DatingApp.API.RazorAssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
