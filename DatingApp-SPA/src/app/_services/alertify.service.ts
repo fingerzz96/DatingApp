@@ -1,22 +1,17 @@
-import {Injectable} from '@angular/core';
-import {StringifyOptions} from 'querystring';
-
+import { Injectable } from '@angular/core';
 declare let alertify: any;
 
 @Injectable({
   providedIn: 'root'
 })
 export class AlertifyService {
-
-  constructor() {
-  }
+  constructor() {}
 
   confirm(message: string, okCallback: () => any) {
-    alertify.confirm(message, function (e) {
+    alertify.confirm(message, function(e) {
       if (e) {
         okCallback();
-      } else {
-      }
+      } else {}
     });
   }
 
@@ -28,12 +23,11 @@ export class AlertifyService {
     alertify.error(message);
   }
 
-  waring(message: string) {
+  warning(message: string) {
     alertify.warning(message);
   }
 
   message(message: string) {
-    alertify.message(message)
+    alertify.message(message);
   }
-
 }

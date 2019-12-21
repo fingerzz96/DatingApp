@@ -14,7 +14,7 @@ namespace DatingApp.API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
+                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846");
 
             modelBuilder.Entity("DatingApp.API.Models.Like", b =>
                 {
@@ -66,7 +66,7 @@ namespace DatingApp.API.Migrations
 
                     b.Property<DateTime>("DateAdded");
 
-                    b.Property<string>("Desription");
+                    b.Property<string>("Description");
 
                     b.Property<bool>("IsMain");
 
@@ -98,7 +98,7 @@ namespace DatingApp.API.Migrations
 
                     b.Property<string>("Gender");
 
-                    b.Property<string>("Interest");
+                    b.Property<string>("Interests");
 
                     b.Property<string>("Introduction");
 

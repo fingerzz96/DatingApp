@@ -1,6 +1,9 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+/* tslint:disable:no-unused-variable */
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
-import {ListsComponent} from './lists.component';
+import { ListsComponent } from './lists.component';
 
 describe('ListsComponent', () => {
   let component: ListsComponent;
@@ -8,9 +11,9 @@ describe('ListsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ListsComponent]
+      declarations: [ ListsComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
