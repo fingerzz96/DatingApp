@@ -96,7 +96,7 @@ namespace DatingApp.API.Controllers
             {
                 var messageToReturn = _mapper.Map<MessageToReturnDto>(message);
 
-                return CreatedAtRoute("GetMessage", new {id = message.Id,}, messageToReturn);
+                return CreatedAtRoute("GetMessage", new {userId, id = message.Id,}, messageToReturn);
             }
 
             throw new Exception("Creating the message failed on save");
@@ -106,7 +106,7 @@ namespace DatingApp.API.Controllers
         public async Task<IActionResult> DeleteMessage(int id, int userId)
         {
             if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
-                return Unauthorized();  
+                return Unauthorized();
 
             var messageFromRepo = await _repo.GetMessage(id);
 
@@ -118,13 +118,13 @@ namespace DatingApp.API.Controllers
 
             if (messageFromRepo.SenderDeleted && messageFromRepo.RecipientDeleted)
                 _repo.Delete(messageFromRepo);
-            
+
             if (await _repo.SaveAll())
                 return NoContent();
 
             throw new Exception("Error deleting the message");
         }
-        
+
         [HttpPost("{id}/read")]
         public async Task<IActionResult> MarkMessageAsRead(int userId, int id)
         {

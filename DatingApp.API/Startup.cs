@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using AutoMapper;
+using Microsoft.Extensions.Hosting;
 
 namespace DatingApp.API
 {
@@ -27,9 +27,9 @@ namespace DatingApp.API
         {
             services.AddDbContext<DataContext>(x =>
                 x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddJsonOptions(opt =>
+            services.AddControllers().AddNewtonsoftJson(options =>
             {
-                opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
             services.AddCors();
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
@@ -49,10 +49,11 @@ namespace DatingApp.API
                     };
                 });
             services.AddScoped<LogUserActivity>();
+            services.AddMvc(options => { options.EnableEndpointRouting = false; });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -78,9 +79,17 @@ namespace DatingApp.API
             }
 
             // app.UseHttpsRedirection();
+
+            app.UseRouting();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseAuthentication();
-            app.UseMvc();
+            app.UseAuthorization();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }
