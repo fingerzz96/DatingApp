@@ -134,6 +134,7 @@
         <e p=".gitignore" t="Include" />
         <e p="Controllers" t="Include">
           <e p="AuthController.cs" t="Include" />
+          <e p="Fallback.cs" t="Include" />
           <e p="MessagesController.cs" t="Include" />
           <e p="PhotosController.cs" t="Include" />
           <e p="UsersController.cs" t="Include" />
@@ -150,6 +151,8 @@
         </e>
         <e p="DatingApp.API.csproj" t="IncludeRecursive" />
         <e p="DatingApp.db" t="Include" />
+        <e p="DatingApp.db-shm" t="Include" />
+        <e p="DatingApp.db-wal" t="Include" />
         <e p="Dtos" t="Include">
           <e p="MessageForCreatingDto.cs" t="Include" />
           <e p="MessageToReturnDto.cs" t="Include" />
@@ -189,7 +192,9 @@
           <e p="Like.cs" t="Include" />
           <e p="Message.cs" t="Include" />
           <e p="Photo.cs" t="Include" />
+          <e p="Role.cs" t="Include" />
           <e p="User.cs" t="Include" />
+          <e p="UserRole.cs" t="Include" />
           <e p="Value.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
@@ -205,6 +210,7 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="DatingApp.API.AssemblyInfo.cs" t="Include" />
+              <e p="DatingApp.API.RazorAssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
