@@ -214,6 +214,27 @@
             </e>
           </e>
         </e>
+        <e p="wwwroot" t="Include">
+          <e p="3rdpartylicenses.txt" t="Include" />
+          <e p="assets" t="Include">
+            <e p="user.png" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="fontawesome-webfont.674f50d287a8c48dc19b.eot" t="Include" />
+          <e p="fontawesome-webfont.912ec66d7572ff821749.svg" t="Include" />
+          <e p="fontawesome-webfont.af7ae505a9eed503f8b8.woff2" t="Include" />
+          <e p="fontawesome-webfont.b06871f281fee6b241d6.ttf" t="Include" />
+          <e p="fontawesome-webfont.fee66e712a8a08eef580.woff" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="main-es2015.734ae1aa6b250b9262f1.js" t="Include" />
+          <e p="main-es5.734ae1aa6b250b9262f1.js" t="Include" />
+          <e p="polyfills-es2015.f24b33ecd397b182e8e4.js" t="Include" />
+          <e p="polyfills-es5.730032f8e0c8ddec9b8c.js" t="Include" />
+          <e p="runtime-es2015.4aa7f8ea4a9fb29947d7.js" t="Include" />
+          <e p="runtime-es5.4aa7f8ea4a9fb29947d7.js" t="Include" />
+          <e p="scripts.1d832302b775f1233f74.js" t="Include" />
+          <e p="styles.cab775479f64d1b5f5ff.css" t="Include" />
+        </e>
       </e>
       <e p="DatingApp.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
