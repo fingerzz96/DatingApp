@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_DatingApp.1958885053.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
@@ -49,7 +46,6 @@
       <e p="DatingApp-SPA/node_modules/font-awesome" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/jasmine-core" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/jasmine-spec-reporter" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/jest-worker" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/karma" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/karma-chrome-launcher" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/karma-coverage-istanbul-reporter" t="IncludeRecursive" />
@@ -74,61 +70,9 @@
       <e p="DatingApp-SPA/node_modules/ts-node" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/tslib" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/tslint" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.dom.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.dom.iterable.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.collection.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.core.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.generator.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.iterable.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.promise.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.proxy.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.reflect.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.symbol.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2016.array.include.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2016.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2016.full.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2017.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2017.full.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2017.intl.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2017.object.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2017.string.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2018.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2018.full.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2018.intl.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2018.promise.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2018.regexp.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2019.array.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2019.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2019.full.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2019.object.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2019.string.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2019.symbol.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2020.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2020.full.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2020.string.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es5.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.es6.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.esnext.array.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.esnext.asynciterable.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.esnext.bigint.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.esnext.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.esnext.full.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.esnext.intl.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.esnext.symbol.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.scripthost.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.webworker.d.ts" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/typescript/lib/lib.webworker.importscripts.d.ts" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/upath" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/uri-js" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/webdriver-js-extender" t="IncludeRecursive" />
-      <e p="DatingApp-SPA/node_modules/worker-farm" t="IncludeRecursive" />
       <e p="DatingApp-SPA/node_modules/zone.js" t="IncludeRecursive" />
       <e p="DatingApp.API" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
@@ -151,8 +95,6 @@
         </e>
         <e p="DatingApp.API.csproj" t="IncludeRecursive" />
         <e p="DatingApp.db" t="Include" />
-        <e p="DatingApp.db-shm" t="Include" />
-        <e p="DatingApp.db-wal" t="Include" />
         <e p="Dtos" t="Include">
           <e p="MessageForCreatingDto.cs" t="Include" />
           <e p="MessageToReturnDto.cs" t="Include" />
@@ -192,9 +134,7 @@
           <e p="Like.cs" t="Include" />
           <e p="Message.cs" t="Include" />
           <e p="Photo.cs" t="Include" />
-          <e p="Role.cs" t="Include" />
           <e p="User.cs" t="Include" />
-          <e p="UserRole.cs" t="Include" />
           <e p="Value.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
@@ -226,14 +166,14 @@
           <e p="fontawesome-webfont.b06871f281fee6b241d6.ttf" t="Include" />
           <e p="fontawesome-webfont.fee66e712a8a08eef580.woff" t="Include" />
           <e p="index.html" t="Include" />
-          <e p="main-es2015.734ae1aa6b250b9262f1.js" t="Include" />
-          <e p="main-es5.734ae1aa6b250b9262f1.js" t="Include" />
-          <e p="polyfills-es2015.f24b33ecd397b182e8e4.js" t="Include" />
-          <e p="polyfills-es5.730032f8e0c8ddec9b8c.js" t="Include" />
-          <e p="runtime-es2015.4aa7f8ea4a9fb29947d7.js" t="Include" />
-          <e p="runtime-es5.4aa7f8ea4a9fb29947d7.js" t="Include" />
-          <e p="scripts.1d832302b775f1233f74.js" t="Include" />
-          <e p="styles.cab775479f64d1b5f5ff.css" t="Include" />
+          <e p="main-es2015.d9e2640105b14ee63ea2.js" t="Include" />
+          <e p="main-es5.b714dc480fbbbb3514d0.js" t="Include" />
+          <e p="polyfills-es2015.a4d57a2e943280308d18.js" t="Include" />
+          <e p="polyfills-es5.e153bc2c18da02d96f49.js" t="Include" />
+          <e p="runtime-es2015.3d1f442296a6201d8326.js" t="Include" />
+          <e p="runtime-es5.fb9e8ce390872ea5d356.js" t="Include" />
+          <e p="scripts.00aef30835fc60cdc996.js" t="Include" />
+          <e p="styles.8cd34254ed2979d3cb23.css" t="Include" />
         </e>
       </e>
       <e p="DatingApp.sln" t="IncludeFlat" />

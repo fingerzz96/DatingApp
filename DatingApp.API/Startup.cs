@@ -18,9 +18,34 @@ namespace DatingApp.API
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration) { Configuration = configuration; }
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
         public IConfiguration Configuration { get; }
+
+        public void ConfigureProductionServices(IServiceCollection services)
+        {
+            services.AddDbContext<DataContext>(x =>
+            {
+                x.UseLazyLoadingProxies();
+                x.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
+            });
+            ConfigureServices(services);
+        }
+
+        public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            services.AddDbContext<DataContext>(x =>
+            {
+                x.UseLazyLoadingProxies();
+                x.UseSqlite(
+                    Configuration.GetConnectionString("DefaultConnection"));
+            });
+
+            ConfigureServices(services);
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
