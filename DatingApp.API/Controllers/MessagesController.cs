@@ -13,9 +13,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace DatingApp.API.Controllers
 {
     [ServiceFilter(typeof(LogUserActivity))]
-    [Authorize]
     [Route("api/users/{userId}/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class MessagesController : ControllerBase
     {
         private readonly IDatingRepository _repo;

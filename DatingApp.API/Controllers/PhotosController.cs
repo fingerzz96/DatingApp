@@ -14,9 +14,9 @@ using Microsoft.Extensions.Options;
 
 namespace DatingApp.API.Controllers
 {
-    [Authorize]
     [Route("api/users/{userId}/photos")]
     [ApiController]
+    [AllowAnonymous]
     public class PhotosController : ControllerBase
     {
         private readonly IDatingRepository _repo;
