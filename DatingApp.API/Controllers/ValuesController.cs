@@ -28,7 +28,7 @@ namespace DatingApp.API.Controllers
         }
 
         // GET api/values/5
-        [AllowAnonymous]
+        [Authorize(Roles = "Member")]
         [HttpGet("{id}")]
         public ActionResult<string> GetValue(int id)
         {

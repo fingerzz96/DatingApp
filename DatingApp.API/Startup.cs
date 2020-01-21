@@ -64,7 +64,7 @@ namespace DatingApp.API
 
             builder = new IdentityBuilder(builder.UserType, typeof(Role), builder.Services);
             builder.AddEntityFrameworkStores<DataContext>();
-            builder.AddRoleValidator<RoleManager<Role>>();
+            builder.AddRoleValidator<RoleValidator<Role>>();
             builder.AddRoleManager<RoleManager<Role>>();
             builder.AddSignInManager<SignInManager<User>>();
 
@@ -95,7 +95,6 @@ namespace DatingApp.API
             services.AddCors();
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper(typeof(DatingRepository).Assembly);
-            services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDatingRepository, DatingRepository>();
             services.AddScoped<LogUserActivity>();
         }
